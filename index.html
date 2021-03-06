@@ -16,8 +16,8 @@
   <header class="clearfix">
 
     <!-- section-search fixed position-->
-    <section id="section-search">
-      <div class="container clearfix">
+    <section id="header-section-fixed">
+      <div class="container">
 
         <div class="box-left w-50 float-left">
           <span><i class="fas fa-globe-europe"></i> English <i class="fas fa-chevron-down"></i></span>
@@ -25,8 +25,8 @@
         </div>
         <div class="box-right w-50 float-left">
           <i class="fas fa-search"></i>
-          <a href="#">Log-in</a>
-          <a href="#">GetHubspotFree</a>
+          <a class="btn" href="#">Log-in</a>
+          <a class="btn" href="#">GetHubspotFree</a>
         </div>
 
       </div>
@@ -34,28 +34,47 @@
     <!-- /section-top fixed position-->
 
     <!-- section-nav navigation bar -->
-    <section id="section-nav">
+    <section id="header-section-nav">
       <div class="container clearfix">
 
-        <div class="box-left w-50 float-left">xxxx</div>
-        <div class="box-right w-50 float-left">xxx</div>
+        <div class="box-left w-32 float-left">
+          <img src="img/logo.svg" alt="logo hubsot">
+        </div>
+        <div class="box-right w-68 float-left">
+          <ul>
+            <li><a href="#">Software<i class="fas fa-chevron-down"></i></a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Resources<i class="fas fa-chevron-down"></i></a></li>
+            <li><a href="#">Partners<i class="fas fa-chevron-down"></i></a></li>
+            <li><a href="#">About<i class="fas fa-chevron-down"></i></a></li>
+          </ul>
+
+
+        </div>
         
       </div>
     </section>
     <!-- /section-nav navigation bar -->
 
     <!-- section banner --> 
-    <section id="section-banner">
+    <section id="header-section-banner">
       <div class="container clearfix">
 
-        <div class="box-left w-50 float-left"></div>
+        <div class="box-jumbo w-40 float-left clearfix">
+
+          <h1>There's a better way to grow.</h1>
+          <p class="p-medium">Marketing, sales, and services software that helps your business grow without compromise. Because "good for the business" should also mean "good for the customer".</p>
+          <a class="btn btn-big" href="#">GetHubspotFree</a>
+          <p class="p-small">Get started with FREE tools, and upgrade as you grow.</p>
+
+        </div>
         
       </div>
     </section>
     <!-- /section banner -->
 
     <!-- section and header -->
-    <section id="section-and-banner">
+    <section id="header-section-and">
     </section>
     <!-- /section and header -->
 
@@ -67,15 +86,40 @@
   <main class="clearfix">
 
     <!-- section-1 Powerful alone --> 
-    <section id="main-section-1">
+    <section id="main-section-powerfull">
       <div class="container clearfix">
 
-        <div class="box-center"></div>
-        <div class="box-center"></div>
-        <div class="box-center clearfix">
-          <div class="box-three float-left"></div>
-          <div class="box-three float-left"></div>
-          <div class="box-three float-left"></div>
+        <div class="box-1 box-center clearfix">
+          <img src="img/cube.webp" alt="cube">
+          <div class="text">
+            <h2>Powerful Alone. better togheter</h2>
+            <p class="p-medium">HubSpot offers a full stack of software for marketing, sales, and customer service, with a completely free CRM at its core. They're powerful alone <i class="fas fa-minus"></i> but even better when used togheter.</p>
+          </div>
+        </div>
+
+        <div class="box-2 box-center box-shadow clearfix">
+          <div class="w-32 float-left">
+            <img src="img/book.svg" alt="book">
+            <a class="btn btn-big" href="#">Learn More</a>
+          </div>
+          <div class="w-68 float-left">
+            <h3>Free HubSpot CRM</h3>
+            <p class="p-medium">Everything you need to organize, track, and build better relationships with leads and customers. Yes, it's 100% free. Forever.</p>
+            <h4>Popular feature</h4>
+            <div class="raw"></div>
+            <ul>
+              <li><i class="fas fa-check-circle"></i>Contact Insight</li>
+              <li><i class="fas fa-check-circle"></i>Deals</li>
+              <li><i class="fas fa-check-circle"></i>task</li>
+            </ul>
+          
+          </div>
+        </div>
+
+        <div class="box-3 box-center clearfix">
+          <div class="box-shadow box-three w-32 float-left"></div>
+          <div class="box-shadow box-three w-32 float-left"></div>
+          <div class="box-shadow box-three w-32 float-left"></div>
         </div>
         
       </div>
@@ -112,14 +156,15 @@
 
     <!-- section-3 Patnership with ous -->
     <section id="main-section-partnerships">
-      <div class="container clearfix">
+      <div class="container">
 
-        <div class="box-partners">
-          <div class="box-left float-left clearfix">
-
+        <!-- box partners -->
+        <div class="box-partners clearfix">
+          <div class="box-left w-32 float-left clearfix">
+            xxxx
           </div>
 
-          <div class="box-right float-left  clearfix">
+          <div class="box-right w-68 float-left  clearfix">
 
             <div class="raw-1">
               <div class="w-25 float-left"></div>
@@ -138,11 +183,27 @@
           </div>
 
         </div>
+        <!-- /box partners -->
 
+        <!-- box start -->
         <div class="box-start  clearfix">
-          <div class="box-left w-50 float-left"></div>
-          <div class="box-right w-50 float-left"></div>
+          
+          <div class="box-jumbo w-40 float-left clearfix">
+
+            <h2>Start Growing With HubSpot Today</h2>
+            <p class="p-medium">With tools to make every part of your process more human and a support team excited to help you, getting started with inbound has never been easier.</p>
+            <a class="btn btn-big" href="#">GetHubspotFree</a>
+            <p class="p-small">Get started with FREE tools, and upgrade as you grow.</p>
+  
+          </div>
+
+          <div class="box-right w-60 float-left">
+            <img src="img/woman.webp" alt="smiling woman asian">
+          </div>
+
         </div>
+        <!-- /box start -->
+
 
       </div>
     </section>
