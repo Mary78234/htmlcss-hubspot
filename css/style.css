@@ -7,7 +7,7 @@
 
 body{
   font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   color: #324A5B;
 }
 
@@ -25,9 +25,8 @@ body{
   position: relative;
 }
 
-.w-68{
-  width: 68%;
-  border: 1px solid black;
+.w-70{
+  width: 70%;
 }
 
 .w-60{
@@ -42,14 +41,13 @@ body{
   width: 40%;
 }
 
-.w-32{
-  width: 32%;
-  border: 1px solid black;
+.w-30{
+  width: 30%;
 }
 
 .w-25{
   width: 25%;
-  border: 1px solid blue;
+  min-height: 20px;
 }
 
 .float-left{
@@ -58,7 +56,7 @@ body{
 }
 
 .btn{
-  padding: 10px 5px;
+  padding: 10px;
   border-radius: 5px;
   border: 1px solid #FE775A;
   background-color: #FE775A;
@@ -74,16 +72,17 @@ a{
   color: #324A5B;
 }
 
-.box-right{
+.t-right{
   text-align: right;
+}
+
+.t-center{
+  text-align: center;
 }
 
 ul{
   list-style: none;
-}
-
-ul li{
-  font-weight: 400;
+  padding: 15px 0;
 }
 
 h1{
@@ -105,11 +104,11 @@ h4{
 
 .p-small{
   font-size: 14px;
-  margin: 5% 0;
+  padding: 25px 0;
 }
 
 .p-medium{
-  margin: 5% 0;
+  padding: 25px 0;
   line-height: 28px;
 }
 
@@ -123,27 +122,20 @@ h4{
 
 .box-shadow{
   background-color: white;
-  box-shadow: 0px 0px 4px gray;
+  box-shadow: 0px 0px 4px #627380;
+}
+
+.box-center{
+  padding: 4% 0;
 }
 /* bg sections */
 
 header{
   margin-top: 80px;
-  background-color: burlywood;
 }
 
 header .container{
   min-width: 1200px;
-}
-
-main{
-  width: 100%;
-  background-color: plum;
-}
-
-footer{
-  width: 100%;
-  background-color: #324A5B;
 }
 
 /* header section fixed */
@@ -192,7 +184,7 @@ footer{
 
 #header-section-nav ul li{
   display: inline-block;
-  padding-top: 24px;
+  padding-top: 10px;
   padding-left: 20px;
 }
 
@@ -224,49 +216,51 @@ footer{
   background-color: #F4F9FD;
 }
 
-#main-section-powerfull .container{
-  padding-top: 1%;
-}
-
-#main-section-powerfull .box-center{
-  width: 90%;
-  margin: 0 auto;
-  padding-top: 50px;
-  border: 1px solid black;
-}
-
 #main-section-powerfull ul li i{
   padding-right: 30px;
   color: #FE775A;
 }
 
 #main-section-powerfull .box-center>.box-shadow:nth-child(2){
-  margin: 0 2%;
+  margin: 0 5%;
 }
 
-#main-section-powerfull .box-center img{
+#main-section-powerfull img{
   display: block;
-  width: 270px;
   margin: auto;
 }
 
-#main-section-powerfull .box-1 .text{
-  padding: 0 100px;
-  text-align: center;
+#main-section-powerfull .box-1{
+  padding: 4% 14%;
 }
 
-#main-section-powerfull .box-center .w-32{
-  text-align: center;
+#main-section-powerfull .box-1 .p-medium{
+  padding-bottom: 0;
 }
 
-#main-section-powerfull .box-2{
-  padding-bottom: 50px;
+#main-section-powerfull .box-1 img{
+  height: 190px;
 }
 
-#main-section-powerfull .box-2 img{
-  display: block;
-  width: 170px;
-  margin: auto;
+#main-section-powerfull .box-2 img, #main-section-powerfull .box-3 img{
+  height: 100px;
+}
+
+#main-section-powerfull .box-2.box-center{
+  padding: 5%;
+}
+
+#main-section-powerfull .box-2 p{
+  padding-right: 20%;
+}
+
+#main-section-powerfull .box-2 h4::after{
+  content: '';
+  display: inline-block;
+  width: 70%;
+  height: 4px;
+  margin-left: 6%;
+  border-top: 1px solid gray;
 }
 
 #main-section-powerfull .box-2 a{
@@ -279,61 +273,149 @@ footer{
   padding-right: 15px;
 }
 
+#main-section-powerfull .box-3 .box-shadow{
+  padding: 20px 40px 40px;
+  min-width: 260px;
+}
+
+#main-section-powerfull .box-3 .box-hub{
+  min-height: 240px;
+}
+
+#main-section-powerfull .box-3 h3{
+  padding-top: 25px;
+}
+
+#main-section-powerfull .box-3 h4::before{
+  content: '';
+  display: block;
+  width: 90%;
+  margin: 10% auto;
+  border-bottom: 1px solid gray;
+}
+
+#main-section-powerfull .box-3 ul{
+  padding: 8% 0 20%;
+}
 
 /* section-data */
 #main-section-data{
   width: 100%;
-  background-color: brown;
+  color: white;
+  background-image: linear-gradient(to right, #00A6BB , #00BCA8);
   padding: 2% 0 5%;
 }
 
 #main-section-data .box-center{
   width: 100%;
-  height: 100px;
-  background-color: saddlebrown;
-  border: 1px solid black;
+  margin: auto;
+  padding-bottom: 3%;
+}
+
+#main-section-data .box-center h2{
+  width: 90%;
+  margin: auto;
+}
+
+#main-section-data .w-25{
+  min-width: 150px;
+  padding: 14px 0 14px;
+}
+
+#main-section-data .w-25 h1 span{
+  font-size: 30px;
+  vertical-align: middle;
+  font-weight: 400;
+}
+
+#main-section-data .w-25 .p-small{
+  padding-top: 3%;
+}
+
+#main-section-data .raw-1{
+  border-bottom: 1px solid white;
+}
+
+#main-section-data .w-25:nth-child(-n+3){
+  border-right: 1px solid white;
 }
 
 /* section partnerships */
-#main-section-partnerships{
-  width: 100%;
-  background-color: white;
-}
 
 #main-section-partnerships .box-partners{
   width: 100%;
   border: 1px solid black;
+  padding: 5%;
 }
 
-#main-section-partnerships .box-start{
-  width: 100%;
-  border: 1px solid red;
+#main-section-partnerships .box-partners .box-left{
+  padding: 0 7%;
+  border: 1px solid black;
+}
+
+#main-section-partnerships .box-partners .box-left span{
+  font-weight: 600;
+}
+
+#main-section-partnerships .box-partners .box-right{
+  padding-left: 9%;
+}
+
+#main-section-partnerships .box-partners .box-right .raw{
+  padding-top: 5%;
+}
+
+#main-section-partnerships .box-partners .box-right img{
+  width: 140px;
+  transform: translateY(-50%);
 }
 
 #main-section-partnerships .box-start img{
   height: 460px;
 }
 
-
-#footer-section-links{
-  height: 100px;
-  background-color: chartreuse;
+/* footer */
+footer{
+  width: 100%;
+  background-color: #324A5B;
+  color: white;
 }
 
-#footer-section-links .w-20{
-  width: 20%;
-  height: 20px;
-  border: 1px solid thistle;
-  display: inline-block;
+footer a{
+  color: white;
+}
+
+#footer-section-links .w-25{
+  min-height: 100px;
+  border: 1px solid black;
+}
+
+#footer-section-links ul{
+  margin-top: 8%;
+}
+
+#footer-section-links ul li:first-child{
+  font-weight: 800;
+}
+
+#footer-section-links ul li{
+  padding: 3% 0;
+}
+
+#footer-section-links .btn{
+  color: #324A5B;
+  background-color: white;
+  border-color: white;
 }
 
 #footer-section-languages{
   height: 150px;
-  background-color: orange;
+  border: 1px solid black;
+  
 }
 
 #footer-section-credits{
-  height: 150px;
-  background-color: yellow;
+  height: 150px;  
+  border: 1px solid black;
 }
 
