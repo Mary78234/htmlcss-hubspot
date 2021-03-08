@@ -128,8 +128,7 @@ h4{
 .box-center{
   padding: 4% 0;
 }
-/* bg sections */
-
+/* header */
 header{
   margin-top: 80px;
 }
@@ -172,7 +171,6 @@ header .container{
 
 /* section nav  */
 #header-section-nav{
-  width: 100%;
   height: 80px;
   background-color: white;
 }
@@ -300,15 +298,12 @@ header .container{
 
 /* section-data */
 #main-section-data{
-  width: 100%;
   color: white;
   background-image: linear-gradient(to right, #00A6BB , #00BCA8);
   padding: 2% 0 5%;
 }
 
 #main-section-data .box-center{
-  width: 100%;
-  margin: auto;
   padding-bottom: 3%;
 }
 
@@ -318,7 +313,6 @@ header .container{
 }
 
 #main-section-data .w-25{
-  min-width: 150px;
   padding: 14px 0 14px;
 }
 
@@ -343,14 +337,11 @@ header .container{
 /* section partnerships */
 
 #main-section-partnerships .box-partners{
-  width: 100%;
-  border: 1px solid black;
   padding: 5%;
 }
 
 #main-section-partnerships .box-partners .box-left{
   padding: 0 7%;
-  border: 1px solid black;
 }
 
 #main-section-partnerships .box-partners .box-left span{
@@ -367,6 +358,8 @@ header .container{
 
 #main-section-partnerships .box-partners .box-right img{
   width: 140px;
+  position: relative;
+  top: 50%;
   transform: translateY(-50%);
 }
 
@@ -376,18 +369,12 @@ header .container{
 
 /* footer */
 footer{
-  width: 100%;
   background-color: #324A5B;
   color: white;
 }
 
 footer a{
   color: white;
-}
-
-#footer-section-links .w-25{
-  min-height: 100px;
-  border: 1px solid black;
 }
 
 #footer-section-links ul{
@@ -406,16 +393,37 @@ footer a{
   color: #324A5B;
   background-color: white;
   border-color: white;
+  line-height: 45px;
 }
 
-#footer-section-languages{
-  height: 150px;
-  border: 1px solid black;
-  
+#footer-section-links ul li i{
+  margin-right: 20px;
 }
 
+/* footer section languages */
+#footer-section-languages .container{
+  padding-top: 4%;
+  border-bottom: 1px solid white;
+}
+
+/* footer-section-languages */
+#footer-section-languages ul li{
+  display: inline;
+  padding-left: 30px;
+}
+
+/* footer-section-credits */
 #footer-section-credits{
   height: 150px;  
-  border: 1px solid black;
+}
+
+#footer-section-credits .w-50{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#footer-section-credits .box-right a:first-of-type{
+  padding-right: 30px;
 }
 
