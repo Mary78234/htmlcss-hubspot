@@ -77,8 +77,8 @@ a{
   color: #324A5B;
 }
 
-a.link:hover{
-  text-decoration: underline;
+.link:hover{
+  text-decoration-line: underline;
   color: #0091ae;
 }
 
@@ -138,6 +138,7 @@ h4{
 .box-center{
   padding: 4% 0;
 }
+
 /* header */
 header{
   margin-top: 80px;
@@ -178,7 +179,6 @@ header{
   color: #07A6C0;
 }
 
-
 /* section nav  */
 #header-section-nav{
   height: 80px;
@@ -218,6 +218,84 @@ header{
   border-top: 2px solid #33485B;
   border-bottom: 2px solid #33485B;
 }
+
+/* header chat */
+#header-chat{
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 999;
+  min-height: 50px;
+  min-width: 50px;
+}
+
+#header-chat .box-icon{
+  position: absolute;
+  bottom: -35px;
+  right: -50px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #425C76;
+  background-image: url('../img/bonus/launcher-open-icon.svg');
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#header-chat .box-icon:hover{
+  box-shadow: 1px 1px 6px #425C76;
+}
+
+#header-chat .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+#header-chat .box-hidden{
+  /* display: none; */
+  position: absolute;
+  bottom: -3px;
+  right: -45px;
+  width: 250px;
+  height: 200px;
+  overflow: hidden;
+}
+
+#header-chat .box-message{
+  position: absolute;
+  bottom: 40px;
+  width: 90%;
+  height: 120px;
+  margin: 33px 10px 3px;
+  padding: 25px;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 1px 1px 6px #EAF0F6;
+}
+
+#header-chat .box-message img:first-of-type{
+  position: absolute;
+  top: -33px;
+  right: 90px;
+  height: 60px;
+}
+
+#header-chat .box-message img:last-of-type{
+  position: absolute;
+  bottom: -39px;
+  right: 158px;
+  height: 42px;
+}
+
+#header-chat .box-icon:hover .box-message {
+  display: block;
+}
+
+/* #header-chat .box-icon:hover, #header-chat .box-icon:active .box-message, #header-chat .box-icon:focus .box-message{
+  display: block;
+} */
+
 
 /* main section powerfull*/
 #main-section-powerfull{
@@ -265,7 +343,7 @@ header{
 #main-section-powerfull .box-2 h4::after{
   content: '';
   display: inline-block;
-  width: 70%;
+  width: 65%;
   height: 4px;
   margin-left: 6%;
   border-top: 1px solid gray;
@@ -287,7 +365,7 @@ header{
 }
 
 #main-section-powerfull .box-3 .box-hub{
-  min-height: 240px;
+  min-height: 270px;
 }
 
 #main-section-powerfull .box-3 h3{
@@ -298,7 +376,7 @@ header{
   content: '';
   display: block;
   width: 90%;
-  margin: 10% auto;
+  margin: 7% auto;
   border-bottom: 1px solid gray;
 }
 
@@ -438,7 +516,6 @@ footer a{
 }
 
 footer a:hover{
-  text-decoration: none;
   color: #0091ae;
 }
 
