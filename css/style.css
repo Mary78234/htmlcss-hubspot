@@ -19,6 +19,7 @@ body{
 
 .container{
   width: 80%;
+  min-width: 1200px;
   height: 100%;
   margin: auto;
   position: relative;
@@ -140,10 +141,6 @@ h4{
 /* header */
 header{
   margin-top: 80px;
-}
-
-header .container{
-  min-width: 1200px;
 }
 
 /* header section fixed */
@@ -441,16 +438,10 @@ footer a{
 }
 
 footer a:hover{
-  text-decoration: underline;
+  text-decoration: none;
   color: #0091ae;
 }
 
 #footer-section-links .btn:hover{
-  text-decoration: none;
-  font-weight: 600;
+  color:rgba(50, 74, 91, 0.5);
 }
-
-#footer-section-credits a i:hover{
-  text-decoration: none;
-}
-
